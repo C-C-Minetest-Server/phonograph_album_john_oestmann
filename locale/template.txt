@@ -1,0 +1,50 @@
+# textdomain: phonograph_album_john_oestmann
+
+##[ .cdb_translations.lua ]##
+Phonograoh album: John Oestmann Music=
+Songs by John Oestmann=
+
+##[ src/001-leviathan.lua ]##
+Chasing the Leviathan=
+Soundworlds Histories: Chasing the Leviathan=
+Lake Aria=
+Rachel’s Weave=
+Sun Cave Village=
+Skypole Gorge=
+Moon Cave=
+Orion’s Geology Workshop=
+Forgotten Shrine in the Forest=
+City of the Leviathan=
+
+##[ src/001-leviathan.lua ]##
+##[ src/002-datapedia-1.lua ]##
+John Oestmann=
+
+##[ src/002-datapedia-1.lua ]##
+Datapedia I=
+Soundworlds Datapedia: Volume I=
+Abandoned Genoti Lab=
+Dunam Sunset Towers=
+Salanth Town Gardens=
+Star Igniters Team Base=
+Fuchsia Road=
+Henri’s Tiny Cafe=
+IRF Outpost=
+Helix Seacaves=
+Helix Seacaves 2=
+Helix Seacaves (Page 2)=
+0x2A731 [fragment]=
+0x2A731 [discovery_fragment]=
+The Asteroid Monotora=
+Cedarwood High Clubrooms=
+0x2A734 [fragment]=
+0x2A734 [discovery_fragment]=
+UDA Azurus=
+Dunam Magnarail Station=
+Shoji Satellite=
+Shoji Satellite 2=
+Shoji Satellite (Page 2)=
+Threadwalkers Tour Club=
+Mountain Town of Urnh=
+0x2A73A [fragment]=
+0x2A73A [discovery_fragment]=
