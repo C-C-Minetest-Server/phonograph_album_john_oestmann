@@ -3,7 +3,7 @@
 -- SPDX-License-Identifier: LGPL-2.1-or-later
 -- Track license: CC0
 
-local S = minetest.get_translator("phonograph_album_mcl")
+local S = minetest.get_translator("phonograph_album_john_oestmann")
 
 local album = phonograph.register_album("phonograph_album_john_oestmann:002-datapedia-1", {
     short_title = S("Datapedia I"),
