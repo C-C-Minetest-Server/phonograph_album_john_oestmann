@@ -5,6 +5,11 @@
 
 local S = minetest.get_translator("phonograph_album_john_oestmann")
 
+local MP = minetest.get_modpath("phonograph_album_john_oestmann")
+local function songpath(name)
+    return table.concat({MP, "phonographs", name .. ".ogg"}, DIR_DELIM)
+end
+
 local album = phonograph.register_album("phonograph_album_john_oestmann:002-datapedia-1", {
     short_title = S("Datapedia I"),
     title = S("Soundworlds Datapedia: Volume I"),
@@ -19,9 +24,8 @@ album:register_song("0x2A729", {
     short_description = nil,
     long_description = nil,
     artist = nil,
-    spec = { -- a SimpleSoundSpec
-        name = "phonograph_album_john_oestmann_2A729",
-    }
+    filepath = songpath("phonograph_album_john_oestmann_2A729"),
+    spec = {},
 })
 
 album:register_song("0x2A72A", {
@@ -29,9 +33,8 @@ album:register_song("0x2A72A", {
     short_description = nil,
     long_description = nil,
     artist = nil,
-    spec = { -- a SimpleSoundSpec
-        name = "phonograph_album_john_oestmann_2A72A",
-    }
+    filepath = songpath("phonograph_album_john_oestmann_2A72A"),
+    spec = {},
 })
 
 album:register_song("0x2A72B", {
@@ -39,9 +42,8 @@ album:register_song("0x2A72B", {
     short_description = nil,
     long_description = nil,
     artist = nil,
-    spec = { -- a SimpleSoundSpec
-        name = "phonograph_album_john_oestmann_2A72B",
-    }
+    filepath = songpath("phonograph_album_john_oestmann_2A72B"),
+    spec = {},
 })
 
 album:register_song("0x2A72C", {
@@ -49,9 +51,8 @@ album:register_song("0x2A72C", {
     short_description = nil,
     long_description = nil,
     artist = nil,
-    spec = { -- a SimpleSoundSpec
-        name = "phonograph_album_john_oestmann_2A72C",
-    }
+    filepath = songpath("phonograph_album_john_oestmann_2A72C"),
+    spec = {},
 })
 
 album:register_song("0x2A72D", {
@@ -59,9 +60,8 @@ album:register_song("0x2A72D", {
     short_description = nil,
     long_description = nil,
     artist = nil,
-    spec = { -- a SimpleSoundSpec
-        name = "phonograph_album_john_oestmann_2A72D",
-    }
+    filepath = songpath("phonograph_album_john_oestmann_2A72D"),
+    spec = {},
 })
 
 album:register_song("0x2A72E", {
@@ -69,9 +69,8 @@ album:register_song("0x2A72E", {
     short_description = nil,
     long_description = nil,
     artist = nil,
-    spec = { -- a SimpleSoundSpec
-        name = "phonograph_album_john_oestmann_2A72E",
-    }
+    filepath = songpath("phonograph_album_john_oestmann_2A72E"),
+    spec = {},
 })
 
 album:register_song("0x2A72F", {
@@ -79,9 +78,8 @@ album:register_song("0x2A72F", {
     short_description = nil,
     long_description = nil,
     artist = nil,
-    spec = { -- a SimpleSoundSpec
-        name = "phonograph_album_john_oestmann_2A72F",
-    }
+    filepath = songpath("phonograph_album_john_oestmann_2A72F"),
+    spec = {},
 })
 
 album:register_song("0x2A730-1", {
@@ -89,9 +87,8 @@ album:register_song("0x2A730-1", {
     short_description = nil,
     long_description = nil,
     artist = nil,
-    spec = { -- a SimpleSoundSpec
-        name = "phonograph_album_john_oestmann_2A730-1",
-    }
+    filepath = songpath("phonograph_album_john_oestmann_2A730-1"),
+    spec = {},
 })
 
 album:register_song("0x2A730-2", {
@@ -100,9 +97,8 @@ album:register_song("0x2A730-2", {
     short_description = nil,
     long_description = nil,
     artist = nil,
-    spec = { -- a SimpleSoundSpec
-        name = "phonograph_album_john_oestmann_2A730-2",
-    }
+    filepath = songpath("phonograph_album_john_oestmann_2A730-2"),
+    spec = {},
 })
 
 album:register_song("0x2A731", {
@@ -111,9 +107,8 @@ album:register_song("0x2A731", {
     short_description = nil,
     long_description = nil,
     artist = nil,
-    spec = { -- a SimpleSoundSpec
-        name = "phonograph_album_john_oestmann_2A731",
-    }
+    filepath = songpath("phonograph_album_john_oestmann_2A731"),
+    spec = {},
 })
 
 album:register_song("0x2A732", {
@@ -121,9 +116,8 @@ album:register_song("0x2A732", {
     short_description = nil,
     long_description = nil,
     artist = nil,
-    spec = { -- a SimpleSoundSpec
-        name = "phonograph_album_john_oestmann_2A732",
-    }
+    filepath = songpath("phonograph_album_john_oestmann_2A732"),
+    spec = {},
 })
 
 album:register_song("0x2A733", {
@@ -131,9 +125,8 @@ album:register_song("0x2A733", {
     short_description = nil,
     long_description = nil,
     artist = nil,
-    spec = { -- a SimpleSoundSpec
-        name = "phonograph_album_john_oestmann_2A733",
-    }
+    filepath = songpath("phonograph_album_john_oestmann_2A733"),
+    spec = {},
 })
 
 album:register_song("0x2A734", {
@@ -142,9 +135,8 @@ album:register_song("0x2A734", {
     short_description = nil,
     long_description = nil,
     artist = nil,
-    spec = { -- a SimpleSoundSpec
-        name = "phonograph_album_john_oestmann_2A734",
-    }
+    filepath = songpath("phonograph_album_john_oestmann_2A734"),
+    spec = {},
 })
 
 album:register_song("0x2A735", {
@@ -152,9 +144,8 @@ album:register_song("0x2A735", {
     short_description = nil,
     long_description = nil,
     artist = nil,
-    spec = { -- a SimpleSoundSpec
-        name = "phonograph_album_john_oestmann_2A735",
-    }
+    filepath = songpath("phonograph_album_john_oestmann_2A735"),
+    spec = {},
 })
 
 album:register_song("0x2A736", {
@@ -162,9 +153,8 @@ album:register_song("0x2A736", {
     short_description = nil,
     long_description = nil,
     artist = nil,
-    spec = { -- a SimpleSoundSpec
-        name = "phonograph_album_john_oestmann_2A736",
-    }
+    filepath = songpath("phonograph_album_john_oestmann_2A736"),
+    spec = {},
 })
 
 album:register_song("0x2A737-1", {
@@ -172,9 +162,8 @@ album:register_song("0x2A737-1", {
     short_description = nil,
     long_description = nil,
     artist = nil,
-    spec = { -- a SimpleSoundSpec
-        name = "phonograph_album_john_oestmann_2A737-1",
-    }
+    filepath = songpath("phonograph_album_john_oestmann_2A737-1"),
+    spec = {},
 })
 
 album:register_song("0x2A737-2", {
@@ -183,9 +172,8 @@ album:register_song("0x2A737-2", {
     short_description = nil,
     long_description = nil,
     artist = nil,
-    spec = { -- a SimpleSoundSpec
-        name = "phonograph_album_john_oestmann_2A737-2",
-    }
+    filepath = songpath("phonograph_album_john_oestmann_2A737-2"),
+    spec = {},
 })
 
 album:register_song("0x2A738", {
@@ -193,9 +181,8 @@ album:register_song("0x2A738", {
     short_description = nil,
     long_description = nil,
     artist = nil,
-    spec = { -- a SimpleSoundSpec
-        name = "phonograph_album_john_oestmann_2A738",
-    }
+    filepath = songpath("phonograph_album_john_oestmann_2A738"),
+    spec = {},
 })
 
 album:register_song("0x2A739", {
@@ -203,9 +190,8 @@ album:register_song("0x2A739", {
     short_description = nil,
     long_description = nil,
     artist = nil,
-    spec = { -- a SimpleSoundSpec
-        name = "phonograph_album_john_oestmann_2A739",
-    }
+    filepath = songpath("phonograph_album_john_oestmann_2A739"),
+    spec = {},
 })
 
 album:register_song("0x2A73A", {
@@ -214,7 +200,6 @@ album:register_song("0x2A73A", {
     short_description = nil,
     long_description = nil,
     artist = nil,
-    spec = { -- a SimpleSoundSpec
-        name = "phonograph_album_john_oestmann_2A73A",
-    }
+    filepath = songpath("phonograph_album_john_oestmann_2A73A"),
+    spec = {},
 })

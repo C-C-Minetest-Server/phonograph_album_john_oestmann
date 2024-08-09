@@ -4,5 +4,8 @@
 
 local MP = minetest.get_modpath("phonograph_album_john_oestmann")
 
+assert(phonograph.send_song,
+    "Please upgrade your Phonograph mod to commit f689f79 or later.")
+
 dofile(MP .. "/src/001-leviathan.lua")
 dofile(MP .. "/src/002-datapedia-1.lua")
