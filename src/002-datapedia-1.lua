@@ -15,7 +15,7 @@ local album = phonograph.register_album("phonograph_album_john_oestmann:002-data
     title = S("Soundworlds Datapedia: Volume I"),
     short_description = nil,
     long_description = nil,
-    cover = nil, -- Copyright unknown
+    cover = "phonograph_album_john_oestmann_cover_002.jpg", -- Copyright CC0 per email
     artist = S("John Oestmann"),
 })
 

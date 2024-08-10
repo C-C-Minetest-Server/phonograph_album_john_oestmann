@@ -15,7 +15,7 @@ local album = phonograph.register_album("phonograph_album_john_oestmann:001-levi
     title = S("Soundworlds Histories: Chasing the Leviathan"),
     short_description = nil,
     long_description = nil,
-    cover = nil, -- Copyright unknown
+    cover = "phonograph_album_john_oestmann_cover_001.jpg", -- Copyright CC0 per email
     artist = S("John Oestmann"),
 })
 

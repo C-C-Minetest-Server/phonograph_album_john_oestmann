@@ -23,6 +23,6 @@
 
 ## License of media
 
-All audio files are authored by John Oestmann and are released under [CC0][CC0].
+All media files are authored by John Oestmann and are released under [CC0][CC0].
 
 [CC0]: https://creativecommons.org/publicdomain/zero/1.0/
