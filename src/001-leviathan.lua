@@ -17,6 +17,7 @@ local album = phonograph.register_album("phonograph_album_john_oestmann:001-levi
     long_description = nil,
     cover = "phonograph_album_john_oestmann_cover_001.jpg", -- Copyright CC0 per email
     artist = S("John Oestmann"),
+    license = phonograph.licenses.CC0,
 })
 
 album:register_song("0x2A721", {
