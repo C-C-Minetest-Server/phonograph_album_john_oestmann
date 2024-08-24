@@ -7,7 +7,11 @@ local S = minetest.get_translator("phonograph_album_john_oestmann")
 
 local MP = minetest.get_modpath("phonograph_album_john_oestmann")
 local function songpath(name)
-    return table.concat({MP, "phonographs", name .. ".ogg"}, DIR_DELIM)
+    return table.concat({
+        MP,
+        "phonographs", "001-leviathan",
+        "phonograph_album_john_oestmann_" .. name .. ".ogg"
+    }, DIR_DELIM)
 end
 
 local album = phonograph.register_album("phonograph_album_john_oestmann:001-leviathan", {
@@ -25,7 +29,7 @@ album:register_song("0x2A721", {
     short_description = nil,
     long_description = nil,
     artist = nil,
-    filepath = songpath("phonograph_album_john_oestmann_2A721"),
+    filepath = songpath("2A721"),
     spec = {},
 })
 
@@ -34,7 +38,7 @@ album:register_song("0x2A722", {
     short_description = nil,
     long_description = nil,
     artist = nil,
-    filepath = songpath("phonograph_album_john_oestmann_2A722"),
+    filepath = songpath("2A722"),
     spec = {},
 })
 
@@ -43,7 +47,7 @@ album:register_song("0x2A723", {
     short_description = nil,
     long_description = nil,
     artist = nil,
-    filepath = songpath("phonograph_album_john_oestmann_2A723"),
+    filepath = songpath("2A723"),
     spec = {},
 })
 
@@ -52,7 +56,7 @@ album:register_song("0x2A724", {
     short_description = nil,
     long_description = nil,
     artist = nil,
-    filepath = songpath("phonograph_album_john_oestmann_2A724"),
+    filepath = songpath("2A724"),
     spec = {},
 })
 
@@ -61,7 +65,7 @@ album:register_song("0x2A725", {
     short_description = nil,
     long_description = nil,
     artist = nil,
-    filepath = songpath("phonograph_album_john_oestmann_2A725"),
+    filepath = songpath("2A725"),
     spec = {},
 })
 
@@ -70,7 +74,7 @@ album:register_song("0x2A726", {
     short_description = nil,
     long_description = nil,
     artist = nil,
-    filepath = songpath("phonograph_album_john_oestmann_2A726"),
+    filepath = songpath("2A726"),
     spec = {},
 })
 
@@ -79,7 +83,7 @@ album:register_song("0x2A727", {
     short_description = nil,
     long_description = nil,
     artist = nil,
-    filepath = songpath("phonograph_album_john_oestmann_2A727"),
+    filepath = songpath("2A727"),
     spec = {},
 })
 
@@ -88,6 +92,6 @@ album:register_song("0x2A728", {
     short_description = nil,
     long_description = nil,
     artist = nil,
-    filepath = songpath("phonograph_album_john_oestmann_2A728"),
+    filepath = songpath("2A728"),
     spec = {},
 })
