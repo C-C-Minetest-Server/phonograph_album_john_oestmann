@@ -10,3 +10,4 @@ assert(phonograph.send_song,
 dofile(MP .. "/src/001-leviathan.lua")
 dofile(MP .. "/src/002-datapedia-1.lua")
 dofile(MP .. "/src/003-datapedia-2.lua")
+dofile(MP .. "/src/004-racing-ouros.lua")
