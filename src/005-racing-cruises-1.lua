@@ -1,5 +1,5 @@
--- phonograph_album_john_oestmann/src/004-racing-ouros.lua
--- Soundworlds Racing: Sands of Ouros (Season XVI)
+-- phonograph_album_john_oestmann/src/005-racing-cruises-1.lua
+-- Soundworlds Racing: Cruises I
 -- SPDX-License-Identifier: LGPL-2.1-or-later
 -- Track license: CC0
 
