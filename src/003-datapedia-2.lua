@@ -15,7 +15,7 @@ local function songpath(name)
 end
 
 local album = phonograph.register_album("phonograph_album_john_oestmann:003-datapedia-2", {
-    short_title = S("Soundworlds Datapedia II"),
+    short_title = S("Soundworlds Datapedia: II"),
     title = S("Soundworlds Datapedia: Volume II"),
     short_description = nil,
     long_description = nil,

@@ -15,7 +15,7 @@ local function songpath(name)
 end
 
 local album = phonograph.register_album("phonograph_album_john_oestmann:001-leviathan", {
-    short_title = S("Chasing the Leviathan"),
+    short_title = S("Soundworlds Histories: Leviathan"),
     title = S("Soundworlds Histories: Chasing the Leviathan"),
     short_description = nil,
     long_description = nil,

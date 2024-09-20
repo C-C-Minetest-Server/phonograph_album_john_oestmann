@@ -5,7 +5,7 @@ Phonograoh album: John Oestmann Music=
 Songs by John Oestmann=
 
 ##[ src/001-leviathan.lua ]##
-Chasing the Leviathan=
+Soundworlds Histories: Leviathan=
 Soundworlds Histories: Chasing the Leviathan=
 Lake Aria=
 Rachel’s Weave=
@@ -18,10 +18,13 @@ City of the Leviathan=
 
 ##[ src/001-leviathan.lua ]##
 ##[ src/002-datapedia-1.lua ]##
+##[ src/003-datapedia-2.lua ]##
+##[ src/004-racing-ouros.lua ]##
+##[ src/005-racing-cruises-1.lua ]##
 John Oestmann=
 
 ##[ src/002-datapedia-1.lua ]##
-Datapedia I=
+Soundworlds Datapedia: I=
 Soundworlds Datapedia: Volume I=
 Abandoned Genoti Lab=
 Dunam Sunset Towers=
@@ -48,3 +51,58 @@ Threadwalkers Tour Club=
 Mountain Town of Urnh=
 0x2A73A [fragment]=
 0x2A73A [discovery_fragment]=
+
+##[ src/003-datapedia-2.lua ]##
+Soundworlds Datapedia: II=
+Soundworlds Datapedia: Volume II=
+Gestalt Canals=
+Double Prism Ark=
+0x2A73D [fragment]=
+0x2A73D [discovery_fragment]=
+Salanth Town Gardens 2=
+Salanth Town Gardens (Page 2)=
+Myra Megafortress Ruins=
+-PRL Lobby (0A)=
+The Falling Palace=
+Shrine of Zadra=
+Shrine of Zadra 2=
+Shrine of Zadra (Page 2)=
+Magma Refinery=
+Magma Refinery 2=
+Magma Refinery (Page 2)=
+0x2A743 [fragment]=
+0x2A743 [discovery_fragment]=
+Tomb of Zilst=
+Firebloom Academy=
+Threadwalkers Tour Club 2=
+Threadwalkers Tour Club (Page 2)=
+0x2A746 [intercept]=
+0x2A746 [radio_intercept]=
+Hyperway Stn. Construction Zone=
+Hyperway Station Construction Zone=
+Hyperway Stn. Construction Zone 2=
+Hyperway Station Construction Zone (Page 2)=
+Forbidden Swamps of Sanctuary=
+0x2A749 [fragment]=
+0x2A749 [discovery_fragment]=
+Radio Fusayne=
+Windfields of Leviathan=
+Repeater Amon=
+Azurus Biochain=
+Repeater Babo=
+
+##[ src/004-racing-ouros.lua ]##
+Soundworlds Racing: Ouros=
+Soundworlds Racing: Sands of Ouros (Season XVI)=
+Blacksand Beaches Race=
+The Vastness Race=
+Graveyard of Ships Race=
+Sandwalker Crater Race=
+Botanic Fields Race=
+
+##[ src/005-racing-cruises-1.lua ]##
+Soundworlds Racing: Cruises I=
+Septr=
+Sandtitan Tunnels=
+Orange Avenue=
+Solar Grove=
