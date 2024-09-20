@@ -43,8 +43,8 @@ album:register_song("0x2A73C", {
 })
 
 album:register_song("0x2A73D", {
-    short_title = S("0x2A73D [fragment]"),
-    title = S("0x2A73D [discovery_fragment]"),
+    short_title = S("@1 [fragment]", "0x2A73D"),
+    title = S("@1 [discovery_fragment]", "0x2A73D"),
     short_description = nil,
     long_description = nil,
     artist = nil,
@@ -128,8 +128,8 @@ album:register_song("0x2A742-ii", {
 })
 
 album:register_song("0x2A743", {
-    short_title = S("0x2A743 [fragment]"),
-    title = S("0x2A743 [discovery_fragment]"),
+    short_title = S("@1 [fragment]", "0x2A743"),
+    title = S("@1 [discovery_fragment]", "0x2A743"),
     short_description = nil,
     long_description = nil,
     artist = nil,
@@ -176,8 +176,8 @@ album:register_song("0x2A738-ii", {
 })
 
 album:register_song("0x2A746", {
-    short_title = S("0x2A746 [intercept]"),
-    title = S("0x2A746 [radio_intercept]"),
+    short_title = S("@1 [intercept]", "0x2A746"),
+    title = S("@1 [radio_intercept]", "0x2A746"),
     short_description = nil,
     long_description = nil,
     artist = nil,
@@ -215,8 +215,8 @@ album:register_song("0x2A748", {
 })
 
 album:register_song("0x2A749", {
-    short_title = S("0x2A749 [fragment]"),
-    title = S("0x2A749 [discovery_fragment]"),
+    short_title = S("@1 [fragment]", "0x2A749"),
+    title = S("@1 [discovery_fragment]", "0x2A749"),
     short_description = nil,
     long_description = nil,
     artist = nil,
