@@ -21,6 +21,7 @@ City of the Leviathan=
 ##[ src/003-datapedia-2.lua ]##
 ##[ src/004-racing-ouros.lua ]##
 ##[ src/005-racing-cruises-1.lua ]##
+##[ src/006-sigmir-ambient.lua ]##
 John Oestmann=
 
 ##[ src/002-datapedia-1.lua ]##
@@ -106,3 +107,12 @@ Septr=
 Sandtitan Tunnels=
 Orange Avenue=
 Solar Grove=
+
+##[ src/006-sigmir-ambient.lua ]##
+Soundworlds: Sigmir Ambient=
+Pharos of Silent Lightning=
+Reactor under the Pharos=
+Seasweeper2 Observation Pod=
+Jungled Carcass of Seasweeper1=
+Radio Tower of Orphenn=
+Windsweep Pillar=
