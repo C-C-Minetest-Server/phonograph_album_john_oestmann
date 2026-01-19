@@ -17,194 +17,52 @@ end
 local album = phonograph.register_album("phonograph_album_john_oestmann:002-datapedia-1", {
     short_title = S("Soundworlds Datapedia: I"),
     title = S("Soundworlds Datapedia: Volume I"),
-    short_description = nil,
+    short_description = S("90’s / 2000’s game inspired music set in The Weave"),
     long_description = nil,
     cover = "phonograph_album_john_oestmann_cover_002.jpg", -- Copyright CC0 per email
     artist = S("John Oestmann"),
     license = phonograph.licenses.CC0,
 })
 
-album:register_song("0x2A729", {
-    title = S("Abandoned Genoti Lab"),
-    short_description = nil,
-    long_description = nil,
-    artist = nil,
-    filepath = songpath("2A729"),
-    spec = {},
-})
-
-album:register_song("0x2A72A", {
-    title = S("Dunam Sunset Towers"),
-    short_description = nil,
-    long_description = nil,
-    artist = nil,
-    filepath = songpath("2A72A"),
-    spec = {},
-})
-
-album:register_song("0x2A72B", {
-    title = S("Salanth Town Gardens"),
-    short_description = nil,
-    long_description = nil,
-    artist = nil,
-    filepath = songpath("2A72B"),
-    spec = {},
-})
-
-album:register_song("0x2A72C", {
-    title = S("Star Igniters Team Base"),
-    short_description = nil,
-    long_description = nil,
-    artist = nil,
-    filepath = songpath("2A72C"),
-    spec = {},
-})
-
-album:register_song("0x2A72D", {
-    title = S("Fuchsia Road"),
-    short_description = nil,
-    long_description = nil,
-    artist = nil,
-    filepath = songpath("2A72D"),
-    spec = {},
-})
-
-album:register_song("0x2A72E", {
-    title = S("Henri’s Tiny Cafe"),
-    short_description = nil,
-    long_description = nil,
-    artist = nil,
-    filepath = songpath("2A72E"),
-    spec = {},
-})
-
-album:register_song("0x2A72F", {
-    title = S("IRF Outpost"),
-    short_description = nil,
-    long_description = nil,
-    artist = nil,
-    filepath = songpath("2A72F"),
-    spec = {},
-})
-
-album:register_song("0x2A730-1", {
-    title = S("Helix Seacaves"),
-    short_description = nil,
-    long_description = nil,
-    artist = nil,
-    filepath = songpath("2A730-1"),
-    spec = {},
-})
-
-album:register_song("0x2A730-2", {
-    short_title = S("Helix Seacaves 2"),
-    title = S("Helix Seacaves (Page 2)"),
-    short_description = nil,
-    long_description = nil,
-    artist = nil,
-    filepath = songpath("2A730-2"),
-    spec = {},
-})
-
-album:register_song("0x2A731", {
-    short_title = S("@1 [fragment]", "0x2A731"),
-    title = S("@1 [discovery_fragment]", "0x2A731"),
-    short_description = nil,
-    long_description = nil,
-    artist = nil,
-    filepath = songpath("2A731"),
-    spec = {},
-})
-
-album:register_song("0x2A732", {
-    title = S("The Asteroid Monotora"),
-    short_description = nil,
-    long_description = nil,
-    artist = nil,
-    filepath = songpath("2A732"),
-    spec = {},
-})
-
-album:register_song("0x2A733", {
-    title = S("Cedarwood High Clubrooms"),
-    short_description = nil,
-    long_description = nil,
-    artist = nil,
-    filepath = songpath("2A733"),
-    spec = {},
-})
-
-album:register_song("0x2A734", {
-    short_title = S("@1 [fragment]", "0x2A734"),
-    title = S("@1 [discovery_fragment]", "0x2A734"),
-    short_description = nil,
-    long_description = nil,
-    artist = nil,
-    filepath = songpath("2A734"),
-    spec = {},
-})
-
-album:register_song("0x2A735", {
-    title = S("UDA Azurus"),
-    short_description = nil,
-    long_description = nil,
-    artist = nil,
-    filepath = songpath("2A735"),
-    spec = {},
-})
-
-album:register_song("0x2A736", {
-    title = S("Dunam Magnarail Station"),
-    short_description = nil,
-    long_description = nil,
-    artist = nil,
-    filepath = songpath("2A736"),
-    spec = {},
-})
-
-album:register_song("0x2A737-1", {
-    title = S("Shoji Satellite"),
-    short_description = nil,
-    long_description = nil,
-    artist = nil,
-    filepath = songpath("2A737-1"),
-    spec = {},
-})
-
-album:register_song("0x2A737-2", {
-    short_title = S("Shoji Satellite 2"),
-    title = S("Shoji Satellite (Page 2)"),
-    short_description = nil,
-    long_description = nil,
-    artist = nil,
-    filepath = songpath("2A737-2"),
-    spec = {},
-})
-
-album:register_song("0x2A738", {
-    title = S("Threadwalkers Tour Club"),
-    short_description = nil,
-    long_description = nil,
-    artist = nil,
-    filepath = songpath("2A738"),
-    spec = {},
-})
-
-album:register_song("0x2A739", {
-    title = S("Mountain Town of Urnh"),
-    short_description = nil,
-    long_description = nil,
-    artist = nil,
-    filepath = songpath("2A739"),
-    spec = {},
-})
-
-album:register_song("0x2A73A", {
-    short_title = S("@1 [fragment]", "0x2A73A"),
-    title = S("@1 [discovery_fragment]", "0x2A73A"),
-    short_description = nil,
-    long_description = nil,
-    artist = nil,
-    filepath = songpath("2A73A"),
-    spec = {},
-})
+for _, data in ipairs({
+    -- ID, long_description (title), short_description (may be nil or string)
+    { "2A729",   S("Abandoned Genoti Lab"),               nil },
+    { "2A72A",   S("Dunam Sunset Towers"),                nil },
+    { "2A72B",   S("Salanth Town Gardens"),               nil },
+    { "2A72C",   S("Star Igniters Team Base"),            nil },
+    { "2A72D",   S("Fuchsia Road"),                       nil },
+    { "2A72E",   S("Henri's Tiny Cafe"),                  nil },
+    { "2A72F",   S("IRF Outpost"),                        nil },
+    { "2A730-1", S("Helix Seacaves"),                     nil },
+    { "2A731",   S("@1 [discovery_fragment]", "0x2A731"), S("@1 [fragment]", "0x2A731") },
+    { "2A732",   S("The Asteroid Monotora"),              nil },
+    { "2A733",   S("Cedarwood High Clubrooms"),           nil },
+    { "2A734",   S("@1 [discovery_fragment]", "0x2A734"), S("@1 [fragment]", "0x2A734") },
+    { "2A735",   S("UDA Azurus"),                         nil },
+    { "2A736",   S("Dunam Magnarail Station"),            nil },
+    { "2A730-2", S("Helix Seacaves (Page 2)"),            S("Helix Seacaves 2") },
+    { "2A737-1", S("Shoji Satellite"),                    nil },
+    { "2A737-2", S("Shoji Satellite (Page 2)"),           S("Shoji Satellite 2") },
+    { "2A738",   S("Threadwalkers Tour Club"),            nil },
+    { "2A739",   S("Mountain Town of Urnh"),              nil },
+    { "2A73A",   S("@1 [discovery_fragment]", "0x2A73A"), S("@1 [fragment]", "0x2A73A") },
+}) do
+    local id, title, short_description = unpack(data)
+    album:register_song("0x" .. id, {
+        title = title,
+        short_description = short_description,
+        long_description = nil,
+        artist = nil,
+        spec = {
+            filepath = songpath(id),
+        },
+        multichannel_specs = {
+            {
+                filepath = songpath(id .. "_ch0"),
+            },
+            {
+                filepath = songpath(id .. "_ch1"),
+            },
+        },
+    })
+end
