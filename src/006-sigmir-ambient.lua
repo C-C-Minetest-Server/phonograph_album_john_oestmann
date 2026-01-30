@@ -15,8 +15,8 @@ local function songpath(name)
 end
 
 local album = phonograph.register_album("phonograph_album_john_oestmann:006-sigmir-ambient", {
-    title = S("Soundworlds: Sigmir Ambient"),
-    short_description = nil,
+    title = S("Soundworlds Datapedia: Sigmir Ambient"),
+    short_description = S("Soundworlds: Sigmir Ambient"),
     long_description = nil,
     cover = "phonograph_album_john_oestmann_cover_006.jpg", -- Copyright CC0 per email
     artist = S("John Oestmann"),
