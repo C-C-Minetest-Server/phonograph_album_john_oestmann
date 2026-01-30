@@ -22,6 +22,7 @@ local album = phonograph.register_album("phonograph_album_john_oestmann:004-raci
     cover = "phonograph_album_john_oestmann_cover_004.jpg", -- Copyright CC0 per email
     artist = S("John Oestmann"),
     license = phonograph.licenses.CC0,
+    album_set = "phonograph_album_john_oestmann:001-soundworlds",
 })
 
 album:register_song("RC-SOO-XVI-1", {
