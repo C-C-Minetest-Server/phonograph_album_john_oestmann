@@ -25,56 +25,28 @@ local album = phonograph.register_album("phonograph_album_john_oestmann:004-raci
     album_set = "phonograph_album_john_oestmann:001-soundworlds",
 })
 
-album:register_song("RC-SOO-XVI-1", {
-    title = S("Blacksand Beaches Race"),
-    short_description = nil,
-    long_description = nil,
-    artist = nil,
-    filepath = songpath("RC-SOO-XVI-1"),
-    spec = {},
-})
-
-album:register_song("RC-SOO-XVI-2", {
-    title = S("The Vastness Race"),
-    short_description = nil,
-    long_description = nil,
-    artist = nil,
-    filepath = songpath("RC-SOO-XVI-2"),
-    spec = {},
-})
-
-album:register_song("RC-SOO-XVI-3", {
-    title = S("Blacksand Beaches Race"),
-    short_description = nil,
-    long_description = nil,
-    artist = nil,
-    filepath = songpath("RC-SOO-XVI-3"),
-    spec = {},
-})
-
-album:register_song("RC-SOO-XVI-4", {
-    title = S("Graveyard of Ships Race"),
-    short_description = nil,
-    long_description = nil,
-    artist = nil,
-    filepath = songpath("RC-SOO-XVI-4"),
-    spec = {},
-})
-
-album:register_song("RC-SOO-XVI-5", {
-    title = S("Sandwalker Crater Race"),
-    short_description = nil,
-    long_description = nil,
-    artist = nil,
-    filepath = songpath("RC-SOO-XVI-5"),
-    spec = {},
-})
-
-album:register_song("RC-SOO-XVI-6", {
-    title = S("Botanic Fields Race"),
-    short_description = nil,
-    long_description = nil,
-    artist = nil,
-    filepath = songpath("RC-SOO-XVI-6"),
-    spec = {},
-})
+for i, title in ipairs({
+    S("Blacksand Beaches Race"),
+    S("The Vastness Race"),
+    S("Graveyard of Ships Race"),
+    S("Sandwalker Crater Race"),
+    S("Botanic Fields Race"),
+}) do
+    local id = "RC-SOO-XVI-" .. i
+    album:register_song(id, {
+        title = title,
+        long_description = nil,
+        artist = nil,
+        spec = {
+            filepath = songpath(id),
+        },
+        multichannel_specs = {
+            {
+                filepath = songpath(id .. "_ch0"),
+            },
+            {
+                filepath = songpath(id .. "_ch1"),
+            },
+        },
+    })
+end
