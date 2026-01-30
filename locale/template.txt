@@ -4,17 +4,15 @@
 Phonograoh album: John Oestmann Music=
 Songs by John Oestmann=
 
+##[ src/000-album-sets.lua ]##
+Soundworlds Albums=
+Minimal Worlds=
+Digital Experiments=
+Millennium Retro=
+
 ##[ src/001-leviathan.lua ]##
 Soundworlds Histories: Leviathan=
 Soundworlds Histories: Chasing the Leviathan=
-Lake Aria=
-Rachel’s Weave=
-Sun Cave Village=
-Skypole Gorge=
-Moon Cave=
-Orion’s Geology Workshop=
-Forgotten Shrine in the Forest=
-City of the Leviathan=
 
 ##[ src/001-leviathan.lua ]##
 ##[ src/002-datapedia-1.lua ]##
@@ -22,35 +20,38 @@ City of the Leviathan=
 ##[ src/004-racing-ouros.lua ]##
 ##[ src/005-racing-cruises-1.lua ]##
 ##[ src/006-sigmir-ambient.lua ]##
+##[ src/007-ardune-ambient.lua ]##
+##[ src/008-prl-1.lua ]##
 John Oestmann=
 
 ##[ src/002-datapedia-1.lua ]##
 Soundworlds Datapedia: I=
 Soundworlds Datapedia: Volume I=
+90’s / 2000’s game inspired music set in The Weave=
 Abandoned Genoti Lab=
 Dunam Sunset Towers=
 Salanth Town Gardens=
 Star Igniters Team Base=
 Fuchsia Road=
-Henri’s Tiny Cafe=
+Henri's Tiny Cafe=
 IRF Outpost=
 Helix Seacaves=
-Helix Seacaves 2=
-Helix Seacaves (Page 2)=
 The Asteroid Monotora=
 Cedarwood High Clubrooms=
 UDA Azurus=
 Dunam Magnarail Station=
+Helix Seacaves (Page 2)=
+Helix Seacaves 2=
 Shoji Satellite=
-Shoji Satellite 2=
 Shoji Satellite (Page 2)=
+Shoji Satellite 2=
 Threadwalkers Tour Club=
 Mountain Town of Urnh=
 
 ##[ src/002-datapedia-1.lua ]##
 ##[ src/003-datapedia-2.lua ]##
-@1 [fragment]=
 @1 [discovery_fragment]=
+@1 [fragment]=
 
 ##[ src/003-datapedia-2.lua ]##
 Soundworlds Datapedia: II=
@@ -63,21 +64,21 @@ Myra Megafortress Ruins=
 -PRL Lobby (0A)=
 The Falling Palace=
 Shrine of Zadra=
-Shrine of Zadra 2=
 Shrine of Zadra (Page 2)=
+Shrine of Zadra 2=
 Magma Refinery=
-Magma Refinery 2=
 Magma Refinery (Page 2)=
+Magma Refinery 2=
 Tomb of Zilst=
 Firebloom Academy=
-Threadwalkers Tour Club 2=
 Threadwalkers Tour Club (Page 2)=
-@1 [intercept]=
+Threadwalkers Tour Club 2=
 @1 [radio_intercept]=
-Hyperway Stn. Construction Zone=
+@1 [intercept]=
 Hyperway Station Construction Zone=
-Hyperway Stn. Construction Zone 2=
+Hyperway Stn. Construction Zone=
 Hyperway Station Construction Zone (Page 2)=
+Hyperway Stn. Construction Zone 2=
 Forbidden Swamps of Sanctuary=
 Radio Fusayne=
 Windfields of Leviathan=
@@ -102,6 +103,7 @@ Orange Avenue=
 Solar Grove=
 
 ##[ src/006-sigmir-ambient.lua ]##
+Soundworlds Datapedia: Sigmir Ambient=
 Soundworlds: Sigmir Ambient=
 Pharos of Silent Lightning=
 Reactor under the Pharos=
@@ -109,3 +111,30 @@ Seasweeper2 Observation Pod=
 Jungled Carcass of Seasweeper1=
 Radio Tower of Orphenn=
 Windsweep Pillar=
+
+##[ src/007-ardune-ambient.lua ]##
+Soundworlds: Ardune Ambient=
+Soundworlds Datapedia: Ardune Ambient=
+Red Moon Quarry=
+Digital Wisp Corridor=
+Datastream Terminal Hub 14=
+Bacchus’ Empty Comet=
+Zen’s Cyborg Workshop=
+Mineborg Techroom=
+Deadlands Forest Shrine=
+Deadlands Forest Shrine II=
+The Iron Rose=
+
+##[ src/008-prl-1.lua ]##
+Soundworlds PRL 1=
+Soundworlds PRL: Volume 1=
+Window Factory=
+Taiko's Digi-Wear Shop=
+Rust Village=
+David's Hill=
+Substrate Tachyon Station=
+Cricket Garden=
+Cricket Garden (Page 2)=
+Sirivia Dome Lobby=
+Phantom’s Grotto=
+Carthium Mines=
