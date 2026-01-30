@@ -1,0 +1,37 @@
+name: luacheck
+on:
+  workflow_run:
+    workflows: [luacheck]
+    branches: [main]
+    types:
+      - completed
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    steps:
+      - uses: actions/checkout@v2
+      - name: Create ZIP archive
+        run: |
+          cd ..
+          zip -r phonograph_album_john_oestmann.zip phonograph_album_john_oestmann -x "phonograph_album_john_oestmann/.git/*" "phonograph_album_john_oestmann/.github/*"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: rolling-release-zip
+          path: ../phonograph_album_john_oestmann.zip
+      - name: Get git commit hash
+        id: vars
+        run: echo "hash=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
+      - name: Upload ZIP as release to Luanti
+        env:
+          LUANTI_CDB_TOKEN: ${{ secrets.LUANTI_CDB_TOKEN }}
+        run: |
+          curl -X POST "https://content.luanti.org/api/packages/Emojiminetest/phonograph_album_john_oestmann/releases/new/" \
+            -H "Authorization: Bearer $LUANTI_CDB_TOKEN" \
+            -F "title=${{ steps.vars.outputs.hash }}" \
+            -F "release_notes=Automated release for commit ${{ steps.vars.outputs.hash }}" \
+            -F "file=@../phonograph_album_john_oestmann.zip" \
+            -F "commit=${{ steps.vars.outputs.hash }}"
