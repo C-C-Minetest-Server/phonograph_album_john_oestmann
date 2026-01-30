@@ -7,7 +7,7 @@ on:
       - completed
 
 jobs:
-  release:
+  on-success:
     runs-on: ubuntu-latest
     permissions:
       contents: read
