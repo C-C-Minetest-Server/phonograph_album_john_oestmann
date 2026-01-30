@@ -24,38 +24,27 @@ local album = phonograph.register_album("phonograph_album_john_oestmann:005-raci
     album_set = "phonograph_album_john_oestmann:001-soundworlds",
 })
 
-album:register_song("RC-CRS-I-1", {
-    title = S("Septr"),
-    short_description = nil,
-    long_description = nil,
-    artist = nil,
-    filepath = songpath("RC-CRS-I-1"),
-    spec = {},
-})
-
-album:register_song("RC-CRS-I-2", {
-    title = S("Sandtitan Tunnels"),
-    short_description = nil,
-    long_description = nil,
-    artist = nil,
-    filepath = songpath("RC-CRS-I-2"),
-    spec = {},
-})
-
-album:register_song("RC-CRS-I-3", {
-    title = S("Orange Avenue"),
-    short_description = nil,
-    long_description = nil,
-    artist = nil,
-    filepath = songpath("RC-CRS-I-3"),
-    spec = {},
-})
-
-album:register_song("RC-CRS-I-4", {
-    title = S("Solar Grove"),
-    short_description = nil,
-    long_description = nil,
-    artist = nil,
-    filepath = songpath("RC-CRS-I-4"),
-    spec = {},
-})
+for i, title in ipairs({
+    S("Septr"),
+    S("Sandtitan Tunnels"),
+    S("Orange Avenue"),
+    S("Solar Grove"),
+}) do
+    local id = "RC-CRS-I-" .. i
+    album:register_song(id, {
+        title = title,
+        long_description = nil,
+        artist = nil,
+        spec = {
+            filepath = songpath(id),
+        },
+        multichannel_specs = {
+            {
+                filepath = songpath(id .. "_ch0"),
+            },
+            {
+                filepath = songpath(id .. "_ch1"),
+            },
+        },
+    })
+end
