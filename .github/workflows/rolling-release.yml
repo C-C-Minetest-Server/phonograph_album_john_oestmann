@@ -17,11 +17,12 @@ jobs:
       - name: Create ZIP archive
         run: |
           cd ..
-          zip -r phonograph_album_john_oestmann.zip phonograph_album_john_oestmann -x "phonograph_album_john_oestmann/.git/*" "phonograph_album_john_oestmann/.github/*"
+          zip -9 -r phonograph_album_john_oestmann.zip phonograph_album_john_oestmann -x "phonograph_album_john_oestmann/.git/*" "phonograph_album_john_oestmann/.github/*"
       - uses: actions/upload-artifact@v4
         with:
           name: rolling-release-zip
-          path: ../phonograph_album_john_oestmann.zip
+          path: phonograph_album_john_oestmann.zip
+          if-no-files-found: error
       - name: Get git commit hash
         id: vars
         run: echo "hash=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
@@ -29,6 +30,8 @@ jobs:
         env:
           LUANTI_CDB_TOKEN: ${{ secrets.LUANTI_CDB_TOKEN }}
         run: |
+          pwd
+          [[ -f ../phonograph_album_john_oestmann.zip ]] || { echo "ZIP file not found"; exit 1; }
           curl -X POST "https://content.luanti.org/api/packages/Emojiminetest/phonograph_album_john_oestmann/releases/new/" \
             -H "Authorization: Bearer $LUANTI_CDB_TOKEN" \
             -F "title=${{ steps.vars.outputs.hash }}" \
